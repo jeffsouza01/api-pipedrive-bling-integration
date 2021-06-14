@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\EasyTech\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/pipedrive -D
+  C:\Program Files\nodejs\node.exe C:\Users\EasyTech\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add dontenv
 
 PATH: 
   C:\Users\EasyTech\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\EasyTech\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\EasyTech\AppData\Roaming\npm;C:\Users\EasyTech\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1\bin;C:\Program Files\Docker Toolbox;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fpipedrive: Not found
+  Error: https://registry.yarnpkg.com/dontenv: Not found
       at Request.params.callback [as _callback] (C:\Users\EasyTech\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
       at Request.self.callback (C:\Users\EasyTech\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
       at Request.emit (events.js:210:5)
@@ -40,10 +40,13 @@ npm manifest:
       "express": "^4.17.1",
       "mongoose": "^5.12.13",
       "pipedrive": "^11.0.0",
-      "reflect-metadata": "^0.1.13"
+      "reflect-metadata": "^0.1.13",
+      "xml-js": "^1.6.11",
+      "xml2js": "^0.4.23"
     },
     "devDependencies": {
       "@types/express": "^4.17.12",
+      "@types/xml2js": "^0.4.8",
       "@typescript-eslint/eslint-plugin": "^4.26.1",
       "@typescript-eslint/parser": "^4.26.1",
       "eslint": "^7.28.0",
@@ -220,6 +223,13 @@ Lockfile:
     version "0.0.30"
     resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
     integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
+  
+  "@types/xml2js@^0.4.8":
+    version "0.4.8"
+    resolved "https://registry.yarnpkg.com/@types/xml2js/-/xml2js-0.4.8.tgz#84c120c864a5976d0b5cf2f930a75d850fc2b03a"
+    integrity sha512-EyvT83ezOdec7BhDaEcsklWy7RSIdi6CNe95tmOAK0yx/Lm30C9K75snT3fYayK59ApC2oyW+rcHErdG05FHJA==
+    dependencies:
+      "@types/node" "*"
   
   "@typescript-eslint/eslint-plugin@^4.26.1":
     version "4.26.1"
@@ -2407,6 +2417,11 @@ Lockfile:
     dependencies:
       sparse-bitfield "^3.0.3"
   
+  sax@>=0.6.0, sax@^1.2.4:
+    version "1.2.4"
+    resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+    integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
+  
   "semver@2 || 3 || 4 || 5":
     version "5.7.1"
     resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
@@ -2883,6 +2898,26 @@ Lockfile:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
     integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+  
+  xml-js@^1.6.11:
+    version "1.6.11"
+    resolved "https://registry.yarnpkg.com/xml-js/-/xml-js-1.6.11.tgz#927d2f6947f7f1c19a316dd8eea3614e8b18f8e9"
+    integrity sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==
+    dependencies:
+      sax "^1.2.4"
+  
+  xml2js@^0.4.23:
+    version "0.4.23"
+    resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
+    integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
+    dependencies:
+      sax ">=0.6.0"
+      xmlbuilder "~11.0.0"
+  
+  xmlbuilder@~11.0.0:
+    version "11.0.1"
+    resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
+    integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
   
   xtend@^4.0.0:
     version "4.0.2"

@@ -1,10 +1,6 @@
 # Instruções gerais
 
----
-
 OBJETIVO Deverá construir uma API RESTful usando a tecnologia NodeJS.
-
-
 
 ### REQUISITOS
 
@@ -17,8 +13,6 @@ OBJETIVO Deverá construir uma API RESTful usando a tecnologia NodeJS.
 - Criar uma collection no banco de dados MongoDB agregando as oportunidades inseridas no Bling por dia e valor total.
 
 - Criar endpoint para trazer os dados consolidados da collection do MongoDB.
-
-
 
 ### INSTRUÇÕES
 
@@ -37,4 +31,3 @@ OBJETIVO Deverá construir uma API RESTful usando a tecnologia NodeJS.
 - Boas práticas de desenvolvimento de API RESTful
 
 - Performance
-
