@@ -1,7 +1,10 @@
+import dotenv from "dotenv";
 import mongoose from "mongoose";
 
+dotenv.config();
+
 mongoose.connect(
-  "mongodb+srv://pipe_user:pipe_user@authcloudproject.uqbgf.mongodb.net/pipeDriveIntegration?retryWrites=true&w=majority",
+  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@authcloudproject.uqbgf.mongodb.net/${process.env.DB_DATABASE}?retryWrites=true&w=majority`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
